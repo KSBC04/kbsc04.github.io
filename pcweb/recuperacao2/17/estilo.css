@@ -1,0 +1,11 @@
+.quadrado{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    margin: 10px;
+}
+
+#meuDiv{
+    display: flex;
+    flex-wrap: wrap;
+}
