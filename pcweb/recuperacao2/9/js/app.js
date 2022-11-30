@@ -1,9 +1,15 @@
+var tabuleiro;
+var board;
+var aviso;
+var jogador;
+var lin, col;
+
 function inicia()
 {
- let tabuleiro = new Array(3);
- let board = document.getElementById('board');
- let aviso = document.getElementById('aviso');
- let jogador = 1;
+ tabuleiro = new Array(3);
+ board = document.getElementById('board');
+ aviso = document.getElementById('aviso');
+ jogador = 1;
 
  for(let i=0 ; i<3 ; i++)
   tabuleiro[i] = new Array(3);
@@ -38,8 +44,8 @@ function exibe()
 function jogar()
 {
  aviso.innerHTML='Vez do jogador: ' + ((jogador)%2 + 1);
- let lin = parseInt(document.getElementById("lin").value)-1;
- let col = parseInt(document.getElementById("col").value)-1;
+ lin = parseInt(document.getElementById("lin").value)-1;
+ col = parseInt(document.getElementById("col").value)-1;
 
  if(tabuleiro[lin][col]==0)
   if(jogador % 2)
