@@ -1,9 +1,4 @@
-function ampliar(id){
-    
-    document.getElementById(id).style.height = 500
-}
-function executar(){
-    let img = document.getElementById("img")
-    img.addEventListener("click", function(){        
-    })
+function abreImg (id){
+    document.getElementById("select").innerHTML = "<img src=" +document.getElementById(id).src+ ">"
+
 }

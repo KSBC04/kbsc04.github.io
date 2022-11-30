@@ -8,3 +8,7 @@
     display: flex;
     flex-wrap: wrap;
 }
+
+#select img{
+    width: 700px;
+}

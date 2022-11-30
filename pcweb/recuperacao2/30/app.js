@@ -12,7 +12,7 @@ function achaPalavra()
 
     p.innerHTML = "";
 
-    
+
     
     for(let i=0; i<T.length; i++)
     {
