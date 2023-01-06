@@ -8,7 +8,7 @@ let produtos;
         xhttp.open("GET", "https://rafaelescalfoni.github.io/desenv_web/restaurante/items.json");
         xhttp.send(); })();
 
-let valor
+
 function soma(valor){
     let total
     total = valor + ((10*valor)/100)
@@ -58,6 +58,7 @@ let container = document.getElementById("container")
 
 let clique = 0
 btnConta.addEventListener("click",function(){ clique++; 
+    
     if(clique % 2 == 0)
     {
         container.innerHTML = ""
@@ -66,13 +67,35 @@ btnConta.addEventListener("click",function(){ clique++;
     else{
         let comprados = JSON.parse(localStorage.getItem("comprados"))
         
+
+        for(let i=0; i<produtos.length; i++)
+        {
+            produtos[i].price = produtos[i].price.split(' ')
+            produtos[i].price = produtos[i].price[1]
+        }
+
+        
+        
         container.innerHTML = "<p class='tituloConta'>Conta</p><br>"
 
+        let total = 0;
         for(let j = 0; j<comprados.length; j++){
             let k = comprados[j]
             container.innerHTML += `<div class="comprados">${produtos[k].name}..............${produtos[k].price}</div>`
-            // soma($produtos[k].price)
+            
+            if(parseFloat(produtos[k].price) != NaN)
+            {
+                total = total + parseFloat(produtos[k].price);
+            }
+
         }
+        console.log(total)
+
+        container.innerHTML += `<br><br><p class='comprados' style="text-align:center; font-size:24px;">Valor Total: $ ${soma(total)}0</p>`
+
         container.style.display = "block"    }});
 
-
+function cancela(){
+        let comprados = JSON.parse(localStorage.getItem("comprados"))
+        
+}
