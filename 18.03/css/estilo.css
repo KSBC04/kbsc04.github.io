@@ -1,0 +1,5 @@
+html {
+    min-height: 100%;
+    background-image: url(../Photos/Capa.png);
+    background-size: cover;
+}
