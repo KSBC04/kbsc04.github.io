@@ -1,0 +1,11 @@
+let btn1 = document.getElementById("btn1");
+btn1 = function(){
+    window.location.href = "./3.html"
+}
+function abreImg1 (id){
+    document.getElementById("select").innerHTML = "<h2>Festa Junina</h2> <p>Pode parecer estranho eu começar a linha cronológica do nosso relacionamento, nós já nos conhecíamos há muito tempo, começamos há conversar realmente quase um mês depois dessa festa, mas juro que faz sentido. Quando começaram os ensaios para a festa junina, eu comecei a ficar mais próximo a você, não foi por causa da festa, mas aconteceu na mesma época. Uma vez você me pediu para ensaiar com você, porque a Nina não poderia e você ainda não tinha ensaiado, eu aceitei e ensaiamos juntos naquele dia, a Duda ficou reclamando porque ela tinha quase que implorado para eu dançar com ela, mas você só teve que pedir uma vez e eu fui. No dia da festa, você e a Nina tinham brigado e você estava meio triste e não queria dançar com ela, de alguma forma que eu não me lembro muito bem, eu quase dancei com você naquele dia, mas tive que ir embora mais cedo e não pude. Fiquei triste por isso, eu realmente queria ter dançado com você naquele dia, porque tinha me divertido dançando com você no ensaio. </br> Depois daquela festa, alguém perguntou para mim de nós como um possível casal pela primeira vez, você com certeza já sabe quem foi: Isabela Frotté. Eu estava na biblioteca com ela e a Sara, elas falaram sobre os namorados e como elas achavam legal as duas terem conhecido eles no cefet e comentaram dos garotos que tinham gostado antes, então a Isabela falou: “E você Kayllane, está gostando de alguém?”, eu disse que não que era muito desliga sobre essa coisas, não estava com o menor interesse em gostar de alguém, e aí ela disse “Tem certeza? E você e o Pablo? Senti que tinha algo entre vocês na festa junina” e eu respondi “Ah, o Pablo? Não, nós somos só amigos mesmo, não rola nada”. Apesar da minha resposta, aquilo ficou na minha cabeça, a Frotté é muito boa em ler pequenos sinais."
+
+}
+function abreVideo (id){
+    document.getElementById("select").innerHTML = "<video src=" +document.getElementById(id).src+ ">"
+}
