@@ -25,11 +25,17 @@ button {
     height: 2cm;
     width: 2cm;
 }
+#int{
+    margin: 15%;
+    margin-top: 10%;
+    text-align: center;
+}
 #tit{
     text-align: center;
     font-size: 50px;
 }
 .img1{
+    margin-top: 10px;
     margin-left: 100px;
     height: 400px;
     width: 280px;
@@ -45,11 +51,8 @@ button {
     flex-wrap: wrap;
 }
 
-#select img{
+#select{
     margin-left: 100px;
-    text-align: center;
-}
-
-#texto{
+    margin-right: 100px;
     text-align: center;
 }
